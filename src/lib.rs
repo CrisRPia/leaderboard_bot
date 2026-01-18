@@ -198,7 +198,6 @@ pub async fn leaderboard(
         })
         .collect();
 
-    // 2. Process groups (Calculate stats)
     let mut groups: HashMap<&User, Vec<&LeaderboardMessageData>> = HashMap::new();
 
     for msg in &resolved_games {
